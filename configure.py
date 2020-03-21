@@ -23,7 +23,7 @@ LIGHTSKYBLUE=(135,206,250)
 BGM_PATH =os.path.join(os.getcwd(),"resources/music/Claude Debussy - Clair De Lune.mp3")
 
 ##Path of Fonts
-FONT_PATH = os.path.join(os.getcwd(), "resources/font/gb5wb1b.TTF")
+FONT_PATH = os.path.join(os.getcwd(), "resources/font/STXINGKA.TTF")
 
 ##Path of Background image
 BD_IMAGE_PATH=os.path.join(os.getcwd(), "resources/images/bg.png")
