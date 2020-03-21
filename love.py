@@ -53,7 +53,7 @@ class Button(pygame.sprite.Sprite):
             pygame.draw.rect(screen,self.edgecolor,self.rect,self.edgesize)
         text_render=self.font.render(self.text,True,self.fontcolor)
         fontsize=self.font.size(self.text)
-        screen.blit(text_render,(self.rect.x+(self.rect.width-fontsize[0])/2,self.rect.y+(self.rect.height-fontsize[1])/2))
+        screen.blit(text_render,(self.rect.x+(self.rect.width-fontsize[0])//2,self.rect.y+(self.rect.height-fontsize[1])//2))
 
 ##Show words at specified location
 def showText(screen,text,position,fontpath,fontsize,fontcolor,is_bold=False):
@@ -73,7 +73,7 @@ def main():
 
     ##Background music
     pygame.mixer.music.load(configure.BGM_PATH)
-    pygame.mixer.music.play(-1,30.0)
+    pygame.mixer.music.play(-1,0.0)
 
     ##Background image
     bg_image=pygame.image.load(configure.BD_IMAGE_PATH)
@@ -109,8 +109,8 @@ def main():
                     root.destroy()
                     is_agree =True
         #Display words
-        showText(screen=screen,text="小姐姐，你好漂亮",position=(40,50),fontpath=configure.FONT_PATH,fontsize=25,fontcolor=configure.BLACK,is_bold=False)
-        showText(screen=screen,text="跟我做爱好不好？",position=(40,100),fontpath=configure.FONT_PATH,fontsize=25,fontcolor=configure.BLACK,is_bold=True)
+        showText(screen=screen,text="小姐姐，你好漂亮我好喜欢你",position=(35,50),fontpath=configure.FONT_PATH,fontsize=25,fontcolor=configure.BLACK,is_bold=False)
+        showText(screen=screen,text="跟我睡觉好不好？",position=(35,100),fontpath=configure.FONT_PATH,fontsize=25,fontcolor=configure.BLACK,is_bold=True)
 
 
         ##Display button
